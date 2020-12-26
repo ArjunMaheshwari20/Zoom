@@ -17,31 +17,42 @@
       message += " <br><b>https://us04web.zoom.us/j/9180935435?pwd=MG51N3JUYndJLzZ2Y3VWMjU4c25oZz09 </b>"
       message += " <br><br> <b>Meeting Id: 918 093 5435 </b>"
       message += " <br> <b>Passcode: 278903 </b>"
-
       DispWin.document.write(message);
-      
     }
+    
   </script>
 <body>
   
     <h1 align="center">Zoom Meeting Scheduler</h1>
     <div class="container">
     <form name="form1">
+      <br>
+    <h3>Enter Date</h3>
         <div class="form-group">
           <input type="date" class="form-control" id="formGroupExampleInput" placeholder="Enter Date" NAME="Date">
         </div>
         <br>
+    <h3>Enter Time</h3>
         <div class="form-group">
           <input type="time" class="form-control" id="formGroupExampleInput2" placeholder="Enter Time"  NAME="Time">
         </div>
         <br>
-
-        <div class="form-group">
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Topic"  NAME="Topic">
-          </div>
+        <div class="form-group col-md-4">
+          <h3>Choose Topic</h3>
+          <select id="inputState" class="form-control" name="Topic">
+            <option>-----Select Topic-----&nbsp;&nbsp;</option>
+            <option>Company Law</option>
+            <option>Organisational Behaviour</option>
+            <option>LFGHR</option>
+            <option>Enterprenureship</option>
+          </select>
+         <br>
+         <div class="form-group">
+          <label for="formGroupExampleInput">Other</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Choose Topic" name="Topic">
+        </div>
           <br>
-          <hr size="4" color="blue" width="100%">
-         <h1 align="center"> Choose Name</h1>
+         <h3> Choose Name</h3>
          <div class="form-check">
           <input class="form-check-input" type="radio" name="name" id="exampleRadios1" value="Dr. Meenakshi Maheshwari Has Invited You to  Scheduled Zoom Meeting" checked>
           <label class="form-check-label" for="exampleRadios1">
@@ -57,13 +68,15 @@
 
 <br> 
           <input TYPE="BUTTON" VALUE="Schedule Zoom Meeting" onClick="display();">
-                  <button type="reset" value="reset">Reset Form</button>    
+          <button type="reset" value="reset">Reset Form</button>    
+
 
       </form>
+      
 </div>
 <br>
 <div class="alert alert-info" role="alert">
-    <b><center>CopyRight@2020 Arjun Maheshwari</center></b>
-  </div>
+  <b><center>CopyRight@2020 Arjun Maheshwari</center></b>
+</div>
 </body>
 </html>
